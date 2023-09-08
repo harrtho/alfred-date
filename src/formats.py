@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright © 2014 deanishe@deanishe.net
+# Copyright (c) 2023 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2014 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -22,20 +23,17 @@ Options:
     -h, --help  Show this help message.
 """
 
-from __future__ import print_function, unicode_literals
-
 import sys
 from datetime import date
 
-from workflow import Workflow, ICON_INFO, ICON_WARNING, ICON_ERROR
-
+from workflow import ICON_ERROR, ICON_INFO, ICON_WARNING, Workflow
 
 log = None
 
 
 def main(wf):
-    from docopt import docopt
     import common
+    from docopt import docopt
     common.log = log
 
     log.debug('-' * 40)

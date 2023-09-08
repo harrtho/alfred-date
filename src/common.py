@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright © 2014 deanishe@deanishe.net
+# Copyright (c) 2023 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2014 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -11,14 +12,12 @@
 """
 """
 
-from __future__ import print_function, unicode_literals
-
-import subprocess
 import locale
-from datetime import date, timedelta
 import re
-from workflow import Workflow
+import subprocess
+from datetime import date, timedelta
 
+from workflow import Workflow
 
 log = None
 
@@ -114,7 +113,7 @@ def get_default_locale():
     """Return system language"""
     output = subprocess.check_output(['defaults', 'read', '-g',
                                       'AppleLanguages'])
-    output = output.strip('()\n ')
+    output = str(output, 'utf-8').strip('()\n ')
     langs = [s.strip('", ').replace('-', '_') for s in output.split('\n')]
     if not len(langs):
         raise ValueError('Could not determine system locale')

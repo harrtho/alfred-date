@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright © 2014 deanishe@deanishe.net
+# Copyright (c) 2023 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2014 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -11,14 +12,11 @@
 """
 """
 
-from __future__ import print_function, unicode_literals
-
-import sys
 import locale
+import sys
 from datetime import date
 
-from workflow import Workflow, ICON_ERROR
-
+from workflow import ICON_ERROR, Workflow
 
 log = None
 
@@ -56,7 +54,7 @@ def main(wf):
     log.debug('date : {0.year}-{0.month}-{0.day}'.format(dt))
     # get date formats
     for i, fmt in enumerate(common.get_formats()):
-        value = unicode(common.date_with_format(dt, fmt), encoding)
+        value = common.date_with_format(dt, fmt)
         wf.add_item(value,
                     'Copy to clipboard',
                     arg=value,
