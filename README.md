@@ -1,5 +1,9 @@
 # Date Workflow for Alfred
 
+[![GitHub Version][version-shield]][releases]
+[![GitHub All Releases][downloads-shield]][releases]
+[![GitHub][licence-shield]][mit-licence]
+
 Generate relative dates based on a simple input format and your own date formatting parameters (there are some default placeholders you can delete).
 
 Supports multiple locales/languages.
@@ -23,7 +27,7 @@ Supports multiple locales/languages.
 Download & installation
 ---
 
-Download the workflow from [GitHub][latest], then double-click the `Relative-Dates-XYZ.alfredworkflow` to install it in Alfred.
+Download the workflow from [GitHub][latest], then double-click the `Date-XYZ.alfredworkflow` to install it in Alfred.
 
 <a name="usage"></a>
 Usage
@@ -102,13 +106,17 @@ Report any issues or feature requests either on [GitHub][issues] or the [Alfred 
 Licensing, thanks etc.
 ---
 
-This Workflow is released under the [MIT Licence][licence].
+This Workflow is released under the [MIT Licence][mit-licence].
 
 It uses the [Alfred-Workflow] and [docopt][docopt] libraries, also both MIT-licensed.
 
-[docopt]: https://github.com/docopt/docopt
-[licence]: https://opensource.org/licenses/MIT
-[issues]: https://github.com/harrtho/alfred-date/issues
-[forum]: https://www.alfredforum.com/topic/4056-relative-dates/
 [demo]: https://github.com/harrtho/alfred-date/raw/master/demo.gif
+[docopt]: https://github.com/docopt/docopt
+[downloads-shield]: https://img.shields.io/github/downloads/harrtho/alfred-date/total.svg
+[forum]: https://www.alfredforum.com/topic/4056-relative-dates/
+[issues]: https://github.com/harrtho/alfred-date/issues
 [latest]: https://github.com/harrtho/alfred-date/releases/latest
+[licence-shield]: https://img.shields.io/github/license/harrtho/alfred-date.svg
+[mit-licence]: https://opensource.org/licenses/MIT
+[releases]: https://github.com/harrtho/alfred-dates/releases
+[version-shield]: https://img.shields.io/github/release/harrtho/alfred-date.svg
