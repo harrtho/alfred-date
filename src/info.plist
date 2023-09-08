@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>net.deanishe.alfred-relative-dates</string>
-	<key>category</key>
-	<string>Tools</string>
+	<string>de.xdevcloud.alfred-date</string>
 	<key>connections</key>
 	<dict>
 		<key>137587A8-1B31-43EB-A46B-6070D39C1355</key>
@@ -150,13 +148,13 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Dean Jackson</string>
+	<string>Thomas Harr</string>
 	<key>description</key>
 	<string>Generate formatted dates based on simple input</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Relative Dates</string>
+	<string>Date</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -700,6 +698,6 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>webaddress</key>
-	<string>http://www.deanishe.net</string>
+	<string>https://github.com/harrtho/alfred-date</string>
 </dict>
 </plist>

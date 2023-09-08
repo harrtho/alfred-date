@@ -108,7 +108,7 @@ It uses the [Alfred-Workflow] and [docopt][docopt] libraries, also both MIT-lice
 
 [docopt]: https://github.com/docopt/docopt
 [licence]: https://opensource.org/licenses/MIT
-[issues]: https://github.com/deanishe/alfred-relative-dates/issues
+[issues]: https://github.com/harrtho/alfred-date/issues
 [forum]: https://www.alfredforum.com/topic/4056-relative-dates/
-[demo]: https://github.com/deanishe/alfred-relative-dates/raw/master/demo.gif
-[latest]: https://github.com/deanishe/alfred-relative-dates/releases/latest
+[demo]: https://github.com/harrtho/alfred-date/raw/master/demo.gif
+[latest]: https://github.com/harrtho/alfred-date/releases/latest
