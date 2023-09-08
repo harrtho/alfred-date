@@ -108,8 +108,9 @@ Licensing, thanks etc.
 
 This Workflow is released under the [MIT Licence][mit-licence].
 
-It uses the [Alfred-Workflow] and [docopt][docopt] libraries, also both MIT-licensed.
+It uses the [Alfred-PyWorkflow][alfred-pyworkflow] and [docopt][docopt] libraries, also both MIT-licensed.
 
+[alfred-pyworkflow]: https://github.com/harrtho/alfred-pyworkflow
 [demo]: https://github.com/harrtho/alfred-date/raw/master/demo.gif
 [docopt]: https://github.com/docopt/docopt
 [downloads-shield]: https://img.shields.io/github/downloads/harrtho/alfred-date/total.svg
