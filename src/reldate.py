@@ -18,6 +18,15 @@ from datetime import date
 
 from workflow import ICON_ERROR, Workflow
 
+# GitHub repo for self-updating
+UPDATE_SETTINGS = {'github_slug': 'harrtho/alfred-date'}
+
+# GitHub Issues
+HELP_URL = 'https://github.com/harrtho/alfred-date/issues'
+
+# Icon shown if a newer version is available
+ICON_UPDATE = 'update-available.png'
+
 log = None
 
 
@@ -32,6 +41,15 @@ def main(wf):
     lc, encoding = locale.getlocale()
     log.debug('args : {}'.format(wf.args))
     log.debug('locale : {}  encoding : {}'.format(lc, encoding))
+
+    # Notify user if update is available
+    # ------------------------------------------------------------------
+    if wf.update_available:
+        wf.add_item('Workflow Update is Available',
+                    '↩ or ⇥ to install',
+                    autocomplete='workflow:update',
+                    valid=False,
+                    icon=ICON_UPDATE)
 
     if len(wf.args):
         query = wf.args[0]
@@ -66,6 +84,7 @@ def main(wf):
 
 
 if __name__ == '__main__':
-    wf = Workflow()
+    wf = Workflow(update_settings=UPDATE_SETTINGS,
+                  help_url=HELP_URL)
     log = wf.logger
     sys.exit(wf.run(main))
