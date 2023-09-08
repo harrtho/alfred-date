@@ -119,5 +119,5 @@ It uses the [Alfred-PyWorkflow][alfred-pyworkflow] and [docopt][docopt] librarie
 [latest]: https://github.com/harrtho/alfred-date/releases/latest
 [licence-shield]: https://img.shields.io/github/license/harrtho/alfred-date.svg
 [mit-licence]: https://opensource.org/licenses/MIT
-[releases]: https://github.com/harrtho/alfred-dates/releases
+[releases]: https://github.com/harrtho/alfred-date/releases
 [version-shield]: https://img.shields.io/github/release/harrtho/alfred-date.svg
